@@ -1,0 +1,19 @@
+.Button {
+  background-color: #c7191e;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  margin-top: 15px;
+  font-weight: bold;
+  width: 313px;
+  border-radius: 35px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px;
+  border-width: 2px;
+  transition: all 0.08s ease 0s;
+}
+
+.Button:hover {
+  background-color: #c92b2f;
+}
