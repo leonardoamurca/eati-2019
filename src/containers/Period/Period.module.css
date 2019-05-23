@@ -1,0 +1,12 @@
+.Period {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-left: -15px;
+  
+}
+
+.Period h3 {
+  font-size: 20px;
+}
+
