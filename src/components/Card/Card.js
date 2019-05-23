@@ -5,11 +5,11 @@ import Button from '../UI/Button/Button';
 class Card extends Component {
   render () {
     return (
-      <div className={classes.Card}>
+      <div style={{backgroundColor: `${this.props.color}`}} className={classes.Card}>
         <h3>
           {this.props.title}
           <br/>
-          <span>{this.props.author}, {this.props.schedule}</span>
+          <span>{this.props.author}{this.props.schedule}</span>
           <br/>
           <span>Local: {this.props.local}</span>
         </h3>

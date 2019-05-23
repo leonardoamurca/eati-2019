@@ -14,6 +14,7 @@ class Period extends Component {
             {fridayActivities.morning.map(act => (
               <Card 
                 key={act.title}
+                color={act.color}
                 title={act.title}
                 local={act.local}
                 schedule={act.schedule}
@@ -27,6 +28,7 @@ class Period extends Component {
             {fridayActivities.afternoon.map(act => (
               <Card 
                 key={act.title}
+                color={act.color}
                 title={act.title}
                 local={act.local}
                 schedule={act.schedule}
@@ -35,6 +37,21 @@ class Period extends Component {
               />
             ))}
           </div>
+          <h3>Noite</h3>
+          <div className={classes.Period}>
+            {fridayActivities.night.map(act => (
+              <Card 
+                key={act.title}
+                color={act.color}
+                title={act.title}
+                local={act.local}
+                schedule={act.schedule}
+                author={act.author}
+                description={act.description}
+              />
+            ))}
+          </div>
+        
     </>    
     );
   }
