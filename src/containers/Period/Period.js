@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import classes from './Period.module.css';
 import Card from '../../components/Card/Card';
-import { fridayActivities } from '../../utils/constants';
 
 
 
@@ -11,9 +10,10 @@ class Period extends Component {
       <> 
         <h3>Manhã</h3>
           <div className={classes.Period}>
-            {fridayActivities.morning.map(act => (
+            {this.props.activities.morning.map(act => (
               <Card 
                 key={act.title}
+                fontColor={act.fontColor}
                 color={act.color}
                 title={act.title}
                 local={act.local}
@@ -25,9 +25,10 @@ class Period extends Component {
           </div>
         <h3>Tarde</h3>
           <div className={classes.Period}>
-            {fridayActivities.afternoon.map(act => (
+            {this.props.activities.afternoon.map(act => (
               <Card 
                 key={act.title}
+                fontColor={act.fontColor}
                 color={act.color}
                 title={act.title}
                 local={act.local}
@@ -39,9 +40,10 @@ class Period extends Component {
           </div>
           <h3>Noite</h3>
           <div className={classes.Period}>
-            {fridayActivities.night.map(act => (
+            {this.props.activities.night.map(act => (
               <Card 
                 key={act.title}
+                fontColor={act.fontColor}
                 color={act.color}
                 title={act.title}
                 local={act.local}

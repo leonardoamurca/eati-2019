@@ -6,7 +6,7 @@ class Card extends Component {
   render () {
     return (
       <div style={{backgroundColor: `${this.props.color}`}} className={classes.Card}>
-        <h3>
+        <h3 style={{ color: `${this.props.fontColor}` }}>
           {this.props.title}
           <br/>
           <span>{this.props.author}{this.props.schedule}</span>
